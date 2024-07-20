@@ -705,7 +705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react-swc@npm:^3.5.0":
+"@vitejs/plugin-react-swc@npm:^3.7.0":
   version: 3.7.0
   resolution: "@vitejs/plugin-react-swc@npm:3.7.0"
   dependencies:
@@ -1969,7 +1969,7 @@ __metadata:
     "@types/react-dom": ^18.3.0
     "@typescript-eslint/eslint-plugin": ^7.15.0
     "@typescript-eslint/parser": ^7.15.0
-    "@vitejs/plugin-react-swc": ^3.5.0
+    "@vitejs/plugin-react-swc": ^3.7.0
     eslint: ^8.57.0
     eslint-plugin-react-hooks: ^4.6.2
     eslint-plugin-react-refresh: ^0.4.7
