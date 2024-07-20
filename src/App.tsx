@@ -2,8 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { AppGraph } from './appGraph'
+import {injectComponent} from 'react-obsidian'
 
-function App() {
+type Injected = DependenciesOf<AppGraph, 'foo'>;
+
+function _App({foo}: Injected) {
   const [count, setCount] = useState(0)
 
   return (
@@ -21,6 +25,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <p>{foo}</p>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -32,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export const App = injectComponent(_App, AppGraph)
